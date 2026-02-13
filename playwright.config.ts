@@ -42,11 +42,15 @@ export default defineConfig({
       name: 'QA',
       use: { ...devices['Desktop Chrome'],
         headless : false,
+        viewport: null,
+        deviceScaleFactor:undefined,
+        launchOptions:{
+          args:['--start-maximized'],
 
 
-       },
-    },
-
+        },
+        },
+      },
     {
       name: 'STAGE',
       use: { ...devices['Desktop Firefox'] },
