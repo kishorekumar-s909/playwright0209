@@ -39,7 +39,7 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'QA',
+      name: 'FIRST',
       use: { ...devices['Desktop Chrome'],
         headless : false,
         viewport: null,

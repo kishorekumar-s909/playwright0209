@@ -1,0 +1,21 @@
+import {test} from '@playwright/test';
+test ("exampl1",async({page})=>{
+    await page.goto("https://playground.bsparksoftwaretechnologies.com/checkbox")
+    const getelement =page.locator("#bst_check5")
+    await getelement.click()
+    const getelement1 =page.locator(".Checkbox_checkboxGroup__72ROX").nth(3)
+    const getelement2 = getelement1.locator("#bst_20")
+    const getelement3 = getelement1.locator("#bst_21")
+    const getelement4 = getelement1.locator("#bst_22")
+    const getelement5 = getelement1.locator("#bst_23")
+    const getelement6 = getelement1.locator("#bst_24")
+    const getelement7 = getelement1.locator("#bst_25")
+    await getelement2.click()
+      await getelement3.click()
+        await getelement4.click()
+          await getelement5.click()
+            await getelement6.click()
+              await getelement7.click()
+                
+    await page.waitForTimeout(5000)
+})

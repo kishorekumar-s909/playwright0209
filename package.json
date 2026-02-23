@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {"FIRST": "npx playwright test webtable.spec.ts --project FIRST"},
   "keywords": [],
   "author": "",
   "license": "ISC",
