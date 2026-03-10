@@ -1,4 +1,4 @@
-import {test} from '@playwright/test';
+import {test,expect} from '@playwright/test';
 test("tables",async({page})=>{
     await page.goto("https://playground.bsparksoftwaretechnologies.com/webtable")
     const dropdown=page.locator("select")
@@ -19,7 +19,7 @@ test.only("userdata",async({page})=>{
       await sortbyid.click()
       const data1 =await page.locator("table tbody tr td:nth-child(1)").allTextContents()
       console.log(data1);
-      
+      expect(data).toEqual(data1)
 
       
       
